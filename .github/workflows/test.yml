@@ -1,12 +1,6 @@
 name: CodeQL / Analyze(ruby)
 
-on:
-  push:
-    paths:
-      - '**/*.rb'
-      - '**/*.erb'
-      - '**/*.gemspec'
-      - '**/Gemfile'
+on: push
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
